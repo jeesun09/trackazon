@@ -14,15 +14,19 @@ This project is built with:
 
 - [Next.js](https://nextjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
-- [Node.js](https://nodejs.org/)
-- [Express](https://expressjs.com/)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/)
 - [Nodemailer](https://nodemailer.com/about/)
+- [Bright Data](https://brightdata.com/)
+- [Headless Ui](https://headlessui.com/v1)
+- [cheerio](https://cheerio.js.org/)
+- [MongoDB](https://www.mongodb.com/)
+- [mongoose](https://mongoosejs.com/)
 
 ## Installation
 
 To run this project locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/yourusername/trackazon.git`
+1. Clone the repository: `git remote add origin https://github.com/jeesun09/trackazon.git`
 2. Navigate into the project directory: `cd trackazon`
 3. Install the dependencies: `npm install`
 4. Start the development server: `npm run dev`
