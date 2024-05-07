@@ -33,5 +33,5 @@ To run this project locally, follow these steps:
 
 ## Usage
 
-Open [click me](https://trackazon-h1grf7i6j-jeesuns-projects.vercel.app/) with your browser to see the result.
+Open [Click Me](https://trackazon-jeesuns-projects.vercel.app/) with your browser to see the result.
 
