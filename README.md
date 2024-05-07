@@ -33,5 +33,5 @@ To run this project locally, follow these steps:
 
 ## Usage
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [click me](https://trackazon-h1grf7i6j-jeesuns-projects.vercel.app/) with your browser to see the result.
 
