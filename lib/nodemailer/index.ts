@@ -105,6 +105,5 @@ export const sendEmail = async (
     if (error) {
       return console.log(error);
     }
-    console.log("Email sent: ", info);
   });
 };

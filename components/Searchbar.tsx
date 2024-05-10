@@ -1,7 +1,6 @@
 "use client";
 import { scrapeAndStoreProduct } from "@/lib/actions/index";
-import { Product } from "@/types";
-import { redirect } from "next/navigation";
+
 import React, { FormEvent, useState } from "react";
 
 
