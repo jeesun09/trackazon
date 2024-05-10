@@ -1,5 +1,7 @@
 "use client";
 import { scrapeAndStoreProduct } from "@/lib/actions/index";
+import { Product } from "@/types";
+import { redirect } from "next/navigation";
 import React, { FormEvent, useState } from "react";
 
 
@@ -33,14 +35,16 @@ const Searchbar = () => {
         return alert('Please Provide Valid Amazon product URL');
     }
     try {
-        setLoading(true);
-        // Scrape the product page
-        const product = await scrapeAndStoreProduct(searchPrompt)
+      setLoading(true);
+      // Scrape the product page
+      const product: any = await scrapeAndStoreProduct(searchPrompt);
+      // Redirect to product page
+      window.location.href = `/products/${product._id}`;
     } catch (error) {
-        console.log(error);
-        setLoading(false);
+      console.log(error);
+      setLoading(false);
     } finally{
-        setLoading(false);
+      setLoading(false);
     }
   };
 
