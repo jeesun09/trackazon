@@ -80,10 +80,9 @@ export async function generateEmailBody(
 };
 
 const transporter = nodemailer.createTransport({
-  pool: true,
   host: "smtp-mail.outlook.com",
-  port: 465,
-  secure: true,
+  port: 587,
+  secure: false,
   auth: {
     user: process.env.OUTLOOK_EMAIL_ID,
     pass: process.env.OUTLOOK_EMAIL_PASSWORD,
@@ -95,7 +94,7 @@ export const sendEmail = async (
   sendTo: string[]
 ) => {
   const mailOptions = {
-    from: process.env.OUTLOOK_EMAIL_ID,
+    from: process.env.OUTLOOK_EMAIL_ID || "jeesunbari6297@outlook.com",
     to: sendTo,
     html: emailContent.body,
     subject: emailContent.subject,
