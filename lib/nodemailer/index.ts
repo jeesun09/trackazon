@@ -80,13 +80,14 @@ export async function generateEmailBody(
 };
 
 const transporter = nodemailer.createTransport({
+  pool: true,
   host: "smtp-mail.outlook.com",
-  port: 587,
-  secure: false,
+  port: 465,
+  secure: true,
   auth: {
-    user: process.env.OUTLOOK_EMAIL_ID,
+    user: process.env.OUTLOOK_EMAIL_ID || "jeesunbari6297@outlook.com",
     pass: process.env.OUTLOOK_EMAIL_PASSWORD,
-  }
+  },
 });
 
 export const sendEmail = async (
